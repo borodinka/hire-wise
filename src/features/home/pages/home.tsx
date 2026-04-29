@@ -64,6 +64,8 @@ export default function Home() {
                   fontWeight={FontWeights.bold}
                   sx={{
                     fontSize: { xs: "2.2rem", md: "4rem" },
+                    lineHeight: { xs: "2rem", md: "3.7rem" },
+                    textAlign: { xs: "center", md: "start" },
                     mt: { xs: 2, md: 0 },
                   }}
                 >
@@ -75,6 +77,7 @@ export default function Home() {
                   fontWeight={FontWeights.bold}
                   sx={{
                     fontSize: { xs: "2.2rem", md: "4rem" },
+                    textAlign: { xs: "center", md: "start" },
                     pt: { xs: 1, md: 3 },
                     pb: { xs: 2, md: 3 },
                   }}
@@ -126,7 +129,11 @@ export default function Home() {
           >
             Why Choose HireWise?
           </Typography>
-          <Typography textAlign="center" color={theme.palette.grey[100]}>
+          <Typography
+            textAlign="center"
+            color={theme.palette.grey[100]}
+            pb={md ? 1 : 0}
+          >
             Discover tools that simplify hiring, save time, and help you find
             the perfect candidates
           </Typography>
